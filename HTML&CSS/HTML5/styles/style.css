@@ -1,27 +1,50 @@
 @import url(./normalize.css);
 @import url(./reset.css);
 
+/* body start */
 body{
   background:#eee;
   font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
+/* layout */
+.header, .visual, .main, .slogan, .footer-inner{
+  width:940px;
+  padding:0 30px;
+  margin:0 auto;
+  box-sizing:border-box;
+}
+
+/* header start */
 .header{
   background:pink;
+  height:15vh;
 }
 
+/* visual start */
 .visual{
   background:orange;
+  height:10vh;
 }
 
+/* main start */
 .main{
   background:lightgreen;
+  height:50vh;
 }
 
+/* article slogan start */
 .slogan{
   background:skyblue;
+  height:10vh;
 }
 
+/* footer start */
 .footer{
   background:coral;
+}
+
+.footer-inner{
+  background:cornflowerblue;
+  height:15vh;
 }
