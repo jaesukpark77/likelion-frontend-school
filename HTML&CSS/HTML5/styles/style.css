@@ -34,14 +34,12 @@ body{
 /* main start */
 .main{
   background:lightgreen;
-  height:50vh;
-  padding:0 15px;
-  display:flow-root;
-}
-
-.group{
-  float:left;
-  margin:0 15px;
+  min-height:450px;
+  display:flex;
+  flex-flow:row nowrap;
+  justify-content:space-between;
+  align-items:flex-start;
+  padding:30px;
 }
 
 .group1{
