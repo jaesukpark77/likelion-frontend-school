@@ -1,9 +1,16 @@
 @import url(./normalize.css);
 @import url(./reset.css);
+@import url(./fontello.css);
 
 /* 기본 스타일 */
 *, *::before, *::after{
   box-sizing:border-box;
+}
+
+/* 링크 스타일 */
+a{
+  text-decoration:none;
+  color:inherit;
 }
 
 /* body start */
@@ -20,9 +27,10 @@ body{
 
 /* header start */
 .header{
-  background:pink;
+  background:#fff;
   height:15vh;
   padding:0 30px;
+  border-radius:0 0 15px 15px;
   position:relative;
 }
 
@@ -31,6 +39,14 @@ body{
   position:absolute;
   top:45px;
   left:60px;
+}
+
+/* memeber start */
+.member{
+  padding:4px 0;
+  display:flex;
+  flex-flow:row nowrap;
+  justify-content:flex-end;
 }
 
 /* visual start */
