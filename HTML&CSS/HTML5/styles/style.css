@@ -8,7 +8,7 @@
 
 /* body start */
 body{
-  background:#eee;
+  background:#ccc;
   font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
@@ -23,6 +23,14 @@ body{
   background:pink;
   height:15vh;
   padding:0 30px;
+  position:relative;
+}
+
+/* logo start */
+.logo{
+  position:absolute;
+  top:45px;
+  left:60px;
 }
 
 /* visual start */
