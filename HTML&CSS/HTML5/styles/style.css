@@ -33,7 +33,6 @@ body{
 /* header start */
 .header{
   background:#fff;
-  height:15vh;
   padding:0 30px;
   border-radius:0 0 15px 15px;
   position:relative;
