@@ -43,8 +43,12 @@ body{
 
 /* member start */
 .member{
+  background:aqua;
   text-align:right;
   padding:4px 0;
+  /* position:relative;
+  right:-10px; */
+  transform:translateX(10px);
 }
 
 .member li{
@@ -54,10 +58,6 @@ body{
 .member a{
   padding:6px 10px;
   display:inherit;
-}
-
-.member li:last-child a{
-  padding-right:0;
 }
 
 .divider{
