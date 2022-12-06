@@ -77,13 +77,40 @@ body{
   margin-right:4px;
 }
 
-/* menu start */
+/* navigation start */
 .navigation{
   padding-bottom:80px;
 }
 
 .menu{
   background:#e85e2c linear-gradient(to bottom,#ef9126 0%,#e85e2c 35%,#e85e2c 70%,#ef9126 100%);
+  display:flex;
+  flex-flow:row nowrap;
+  padding-left:230px;
+  height:47px;
+  border-top:2px solid currentColor;
+  border-radius:0 0 5px 5px;
+}
+
+.menu-item{
+  border-left:2px solid #fff;
+}
+
+.menu-button{
+  border:0;
+  background:transparent;
+  padding:0 23px;
+  line-height:45px;
+  font-size:15px;
+  font-weight:700;
+  color:#fff;
+  text-shadow:1px 1px 0 #000, -1px -1px 0 #000;
+}
+
+.sub-menu{
+  background:pink;
+  position:absolute;
+  display:none;
 }
 
 /* visual start */
