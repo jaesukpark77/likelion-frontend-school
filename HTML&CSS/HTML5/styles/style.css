@@ -56,6 +56,10 @@ body{
   display:inherit;
 }
 
+.member li:last-child a{
+  padding-right:0;
+}
+
 .divider{
   margin-right:4px;
 }
