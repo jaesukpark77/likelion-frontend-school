@@ -147,7 +147,29 @@
   <!-- visual end -->
   <!-- main start -->
   <main class="main">
-    <div class="group group1">그룹1</div>
+    <div class="group group1">
+      <section class="login">
+        <h2 class="login-title">로그인</h2>
+        <form class="login-form" action="https://formspree.io/f/mjvznepk" method="POST">
+          <fieldset>
+            <legend>회원 로그인 폼</legend>
+            <div class="user-email">
+              <label for="userEmail">아이디</label>
+              <input type="email" name="userEmail" id="userEmail" placeholder="fe@euid.dev" required/>
+            </div>
+            <div class="user-pw">
+              <label for="userPw">아이디</label>
+              <input type="password" name="userPw" id="userPw" placeholder="8자리 이상"required/>
+            </div>
+            <button type="submit" class="login-button">로그인</button>
+          </fieldset>
+        </form>
+        <ul class="sign">
+          <li><a href="/">회원가입</a></li>
+          <li><a href="/">아이디/비밀번호 찾기</a></li>
+        </ul>
+      </section>
+    </div>
     <div class="group group2">그룹2</div>
     <div class="group group3">그룹3</div>
   </main>
