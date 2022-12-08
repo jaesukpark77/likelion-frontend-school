@@ -31,8 +31,8 @@ a{
 body{
   font-size:1.4rem;
   color:#121212;
-  background:#ccc linear-gradient(to bottom, #ccc 0%, #eee 35%, #fff 70%, #fff 100%);
   font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  background:url("./images/bg_flower.png") no-repeat 50% 0, #ccc linear-gradient(to bottom, #ccc 0%, #eee 35%, #fff 70%, #fff 100%);
 }
 
 /* layout */
@@ -198,18 +198,45 @@ body{
   }
 }
 
+@keyframes fadeEffect{
+  0%{
+    opacity:1;
+  }
+  100%{
+    opacity:0;
+  }
+}
+
 .visual{
-  background:orange;
   height:120px;
+  position:relative;
+}
+
+.visual::before, .visual::after{
+  content:'';
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  animation:fadeEffect 2000ms infinite alternate;
+}
+
+.visual::before{
+  background:url("./images/ani_flower_01.png") no-repeat 0 -10px, url("./images/ani_flower_02.png") no-repeat 600px 0;
+}
+
+.visual::after{
+  background:url("./images/ani_flower_03.png") no-repeat 300px 0, url("./images/ani_flower_04.png") no-repeat 800px 0;
+  animation-delay:1000ms;
 }
 
 .visual-text{
   font-family:Georgia, 'Times New Roman', Times, serif;
-  background:coral;
-  animation-name:moveEffect;
-  animation-duration:2000ms;
-  animation-fill-mode:forwards;
-  display:inline-block;
+  animation:moveEffect 2000ms forwards ease-in-out;
+  /* display:inline-block; */
+  position:absolute;
+  z-index:1;
 }
 
 
