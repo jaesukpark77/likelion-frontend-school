@@ -242,9 +242,10 @@ body{
 
 /* main start */
 .main{
-  background:lightgreen;
-  height:50vh;
-  padding:0 15px;
+  background:#fff;
+  min-height:450px;
+  padding:30px 15px;
+  border-radius:15px 15px 0 0;
   display:flow-root;
 }
 
@@ -254,7 +255,6 @@ body{
 }
 
 .group1{
-  background:violet;
   width:250px;
 }
 
@@ -267,6 +267,82 @@ body{
   background:gold;
   width:190px;
 }
+
+.login{
+  background:#ed552f radial-gradient(circle at right top, #e8852e, #ed552f);
+  padding:10px;
+  border-radius:5px;
+  box-shadow:5px 5px 0 #ccc;
+}
+
+.login-title{
+  color:#ff0;
+  font-size:15px;
+  font-weight:700;
+  text-indent:10px;
+}
+
+.login-form, .sign{
+  background:#fff;
+}
+
+.login-form{
+  margin-top:10px;
+  padding:10px 10px 0 10px;
+  border-radius:5px 5px 0 0;
+}
+
+.login-form fieldset{
+  border-bottom:1px solid #aaa;
+  padding-bottom:4px;
+  position:relative;
+}
+
+.user-email, .user-pw{
+  margin-bottom:6px;
+}
+
+.login-form label{
+  display:inline-block;
+  width:4em;
+}
+
+.login-form input{
+  width:90px;
+  height:22px;
+  border:1px solid #aaa;
+  padding:2px 2px 2px 6px;
+  border-radius:2px;
+}
+
+.login-form button{
+  position:absolute;
+  top:0;
+  right:0;
+  width:50px;
+  height:50px;
+  padding:0;
+  border:0;
+  font-size:13px;
+  color:#fff;
+  background:#ed552f;
+  border-radius:2px;
+}
+
+.sign{
+  border-radius:0 0 5px 5px;
+  padding:4px 10px;
+  display:flex;
+  flex-flow:row nowrap;
+  justify-content:space-between;
+}
+
+.sign a{
+  display:block;
+  padding:6px 0;
+  letter-spacing:-1px;
+}
+
 
 /* article slogan start */
 .slogan{
