@@ -363,6 +363,60 @@ body{
   color:#f00;
 }
 
+.term{
+  margin-top:20px;
+  border:1px solid #aaa;
+  border-radius:5px;
+  padding:10px 15px;
+  background: #ccc linear-gradient(to bottom, #ccc, #eee);
+}
+
+.term-title{
+  font-size:1.5rem;
+  font-weight:700;
+}
+
+.term-list{
+  margin-top:10px;
+}
+
+.term-list>div{
+  margin-top:10px;
+  display:flow-root;
+}
+
+.term-list-subject, .term-list-brief{
+  float:right;
+  width:145px;
+}
+
+.term-list-subject{
+  color:#296897;
+  font-weight:500;
+}
+
+.term-list-thumbnail{
+  float:left;
+}
+
+.term-list-thumbnail img{
+  vertical-align:middle;
+}
+
+.term-list-brief{
+  margin-top:5px;
+  line-height:1.5;
+}
+
+.cross .term-list-subject, .cross .term-list-brief{
+  float:left;
+}
+
+.cross .term-list-thumbnail{
+  float:right;
+}
+
+
 /* article slogan start */
 .slogan{
   background:skyblue;
