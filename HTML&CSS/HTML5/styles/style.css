@@ -259,7 +259,6 @@ body{
 }
 
 .group2{
-  background:salmon;
   width:380px;
 }
 
@@ -416,6 +415,52 @@ body{
   float:right;
 }
 
+/* 검색 폼 */
+.search-form {
+  background: #ccc linear-gradient(to bottom, #ccc, #eee);
+  border: 1px solid #aaa;
+  border-radius: 15px 15px 0 0;
+  padding: 15px 25px 10px;
+}
+
+.search-form-inner{
+  display:flex;
+  flex-flow:row nowrap;
+}
+
+.form-group{
+  flex-grow:1;
+  display:flex;
+  flex-flow:row nowrap;
+  align-items:center;
+  padding-right:10px;
+}
+
+.form-group-label{
+  margin-right:10px;
+  flex-shrink:0;
+}
+
+.form-group-input{
+  border:1px solid #aaa;
+  border-radius:3px;
+  height:24px;
+  padding:1px 1px 1px 5px;
+  flex-flow:1;
+  min-width:0;
+  width:100%;
+}
+
+.search-button{
+  flex-shrink:0;
+  background:#000;
+  color:#fff;
+  height:24px;
+  border:0;
+  border-radius:3px;
+  padding:0 10px;
+  font-size:1.2rem;
+}
 
 /* article slogan start */
 .slogan{
