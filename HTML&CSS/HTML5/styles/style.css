@@ -462,6 +462,74 @@ body{
   font-size:1.2rem;
 }
 
+/* 공지사항 및 자료실 */
+.board{
+  margin-top:20px;
+  position:relative;
+}
+
+.tab-panel{
+  display:none;
+  margin-top:15px;
+}
+
+.board-list li{
+  margin-top:10px;
+  display:flex;
+  flex-flow:row nowrap;
+  justify-content:space-between;
+}
+
+.board-list a{
+  flex-grow:1;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+
+.board-list time{
+  flex-grow:0;
+  margin-left:10px;
+}
+
+.is-select.tab-panel{
+  display:block;
+}
+
+.board-more{
+  background:;
+}
+
+.tab-list{
+  display:flex;
+  flex-flow:row nowrap;
+}
+
+.tab{
+  border:1px solid #aaa;
+  background:#ccc;
+  border-radius:5px 5px 0 0;
+  padding:5px 10px;
+  color:#666;
+}
+
+.is-select.tab{
+  background:#fff;
+  color:#e85e2c;
+  border-color:currentColor currentColor #fff currentColor;
+}
+
+.board-more{
+  position:absolute;
+  top:-8px;
+  right:-8px;
+  padding:8px;
+}
+
+.icon-plus::before{
+  color:hsla(110,50%,30%,1);
+}
+
 /* article slogan start */
 .slogan{
   background:skyblue;
