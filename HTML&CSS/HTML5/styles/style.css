@@ -600,7 +600,6 @@ body{
 }
 
 /* event section */
-
 .event{
   display:flex;
   flex-flow:row wrap;
@@ -671,6 +670,59 @@ body{
 .related-list:hover, .related-list:focus{
   height:147px;
   padding:10px 0;
+}
+
+/* favorite section */
+.favorite{
+  position:relative;
+}
+
+.favorite-list{
+  list-style-type:none;
+}
+
+.favorite-list li{
+  margin-top:10px;
+  counter-increment:number;
+  display:flex;
+  flex-flow:row nowrap;
+  align-items:center;
+}
+
+.favorite-list li::before{
+  content:counter(number);
+  background:#aaa;
+  color:#fff;
+  font-size:1.2rem;
+  margin-right:8px;
+  border-radius:3px;
+  display:inline-block;
+  width:1.5em;
+  text-align:center;
+  line-height:1.5;
+}
+
+.up, .stop, .down{
+  display:inline-block;
+  width:9px;
+  height:11px;
+  background:url("./images/rank.png") no-repeat;
+  margin-left:auto;
+}
+
+.stop{
+  background-position:0 50%;
+}
+
+.down{
+  background-position:0 100%;
+}
+
+.favorite-more{
+  position:absolute;
+  top:-8px;
+  right:-8px;
+  padding:8px;
 }
 
 /* article slogan start */
