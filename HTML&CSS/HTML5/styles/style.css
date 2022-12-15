@@ -1,6 +1,7 @@
 @import url(./normalize.css);
 @import url(./reset.css);
 @import url(./fontello.css);
+@import url(./module.css);
 
 /* 숨김 콘텐츠 */
 .a11y-hidden{
@@ -263,7 +264,6 @@ body{
 }
 
 .group3{
-  background:gold;
   width:190px;
 }
 
@@ -582,6 +582,16 @@ body{
   text-align:center;
 }
 
+.news-item-thumbnail img{
+  box-shadow:0 15px 10px 5px #ccc;
+  margin-bottom:15px;
+}
+
+.news-item-thumbnail figcaption {
+  width: 112px;
+  text-align: center;
+}
+
 .news-more{
   position:absolute;
   top:-8px;
@@ -589,6 +599,77 @@ body{
   padding:8px;
 }
 
+.event{
+  display:flex;
+  flex-flow:row wrap;
+  justify-content:space-between;
+  align-items:flex-start;
+  border-bottom:1px solid #aaa;
+}
+
+.event-button-wrapper{
+  display:flex;
+  flex-flow:row nowrap;
+  align-items:flex-start;
+  gap:5px;
+}
+
+.event-button{
+  width:19px;
+  height:18px;
+  border:0;
+  background:url("./images/back_forward.png") no-repeat;
+  padding:0;
+}
+
+.event-button-next{
+  background-position:100% 0;
+}
+
+.event-thumbnail, .event-brief{
+  margin:10px 0;
+}
+
+.event-thumbnail img{
+  border:1px solid #aaa;
+  box-shadow:5px 5px 0 0 #ccc;
+}
+
+.event-brief{
+  line-height:1.5;
+}
+
+.related{
+  margin-top:10px;
+}
+
+.related-list{
+  margin-top:10px;
+  background:#fff;
+  border:1px solid #aaa;
+  border-radius:5px;
+  height:27px;
+  overflow:hidden;
+  transition: height 400ms 0ms, padding 400ms 400ms;
+}
+
+.related-list li{
+  height:25px;
+  display:flex;
+  flex-flow:row nowrap;
+  align-items:center;
+  padding:0 5px;
+}
+
+.related-list a{
+  flex-grow:1;
+  padding:0 10px;
+}
+
+.related-list:hover, .related-list:focus{
+  height:147px;
+  padding:10px 0;
+}
 
 /* article slogan start */
 .slogan{
