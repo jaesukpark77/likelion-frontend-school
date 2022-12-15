@@ -599,6 +599,8 @@ body{
   padding:8px;
 }
 
+/* event section */
+
 .event{
   display:flex;
   flex-flow:row wrap;
