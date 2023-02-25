@@ -12,7 +12,9 @@ export function Button({
       type="button"
       className={classes.component}
       style={{
-        backgroundColor: !isSecondary ? getColor('primary/500') : ('primary/50'),
+        backgroundColor: !isSecondary
+          ? getColor('primary/500')
+          : getColor('primary/50'),
         color: !isSecondary ? getColor('white') : getColor('primary/400'),
       }}
       {...restProps}

@@ -6,7 +6,6 @@ export function SkipToContent({ to, ...restProps }) {
 
   let targetElement = null;
 
-  // side effect 적용 가능
   useEffect(() => {
     targetElement = document.querySelector(to); // null
 
@@ -20,7 +19,6 @@ export function SkipToContent({ to, ...restProps }) {
     }
   }, []);
 
-  // React 요소 ({ref, props, type}) -> ReactDOM 렌더링 -> 실제 DOM
   return (
     <A11yHidden
       ref={skipToContentRef}

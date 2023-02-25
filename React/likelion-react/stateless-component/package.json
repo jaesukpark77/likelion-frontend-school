@@ -1,8 +1,8 @@
 {
-  "name": "stateless-component",
   "private": true,
-  "version": "0.0.0",
   "type": "module",
+  "name": "stateless-component",
+  "version": "0.0.1",
   "scripts": {
     "start": "npm run dev -- --open",
     "dev": "vite",
@@ -17,8 +17,8 @@
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
     "@vitejs/plugin-react-swc": "^3.0.0",
-    "prop-types": "^15.8.1",
-    "sass": "^1.58.3",
+    "prop-types": "15.8.1",
+    "sass": "1.58.3",
     "vite": "^4.1.0"
   }
 }
